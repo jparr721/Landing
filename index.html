@@ -8,6 +8,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="utility.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
@@ -27,19 +28,19 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
-                <li id='menuOption' class="animated bounceInRight nav-item">
+                <li id='menuOption' class="animated zoomIn nav-item">
                     <a class="link-style" href="#top">Home</a>
                 </li>
-                <li id='menuOption' class="nav-item animated bounceInRight">
+                <li id='menuOption' class="nav-item animated zoomIn">
                     <a class="link-style" href="#about">About</a>
                 </li>
-                <li id='menuOption' class="nav-item animated bounceInRight">
+                <li id='menuOption' class="nav-item animated zoomIn">
                     <a class="link-style" href="#services">Services</a>
                 </li>
-                <li id='menuOption' class="nav-item animated bounceInRight">
+                <li id='menuOption' class="nav-item animated zoomIn">
                     <a class="link-style" href="#projects">Projects</a>
                 </li>
-                <li id='menuOption' class="nav-item animated bounceInRight">
+                <li id='menuOption' class="nav-item animated zoomIn">
                     <a class="link-style" href="#hire-us">Hire Us</a>
                 </li>
             </ul>
@@ -48,8 +49,9 @@
     <div class="parallax">
         <h1 class="text-center parallaxText animated fadeInDown">Sphynx</h1>
         <p class="text-center sub-heading animated fadeInUp">Software Engineers With A Passion To Improve</p>
+        <button type="button" class="btn btn-primary btn-lg top-btn animated fadeInUp">Let's Work Together</button>
     </div>
-    <div id="about" class="container-fluid text-center description-container" style="padding-top: 100px; padding-bottom: 100px;">
+    <div id="about" class="container-fluid text-center description-container slideanim" style="padding-top: 100px; padding-bottom: 100px;">
         <div class="text-container">
             <h2 class="nowrap">A Relentless Desire</h1>
                 <h2 class="nowrap">To Improve.</h1>
@@ -60,33 +62,107 @@
                     </p>
         </div>
     </div>
-    <div id="services" class="container-fluid text-center">
-        <h1>Services</h1>
-        <h5>A small preview of what we offer...</h5>
-        <div class="row">
-            <div class="col-4 purple-bg">
-                <i class="fa fa-hourglass-half fa-5x" aria-hidden="true"></i>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-            </div>
-            <div class="col-4 blue-bg">
-                <i class="fa fa-keyboard-o fa-5x" aria-hidden="true"></i>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-            </div>
-            <div class="col-4 orange-bg">
-                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-                <h1>TEXT TEXT TEXT</h1>
-            </div>
+  </div>
+    <div class="row text-center slideanim">
+        <div class="col-3 iconanim">
+            <i class="fa fa-hourglass-half fa-5x" aria-hidden="true"></i>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+        </div>
+        <div class="col-3 iconanim">
+            <i class="fa fa-keyboard-o fa-5x" aria-hidden="true"></i>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+        </div>
+        <div class="col-3 iconanim">
+            <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+        </div>
+        <div class="col-3 iconanim">
+            <i class="fa fa-comment-o fa-5x" aria-hidden="true"></i>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
+            <h1>TEXT TEXT TEXT</h1>
         </div>
     </div>
-    <div id="projects" class="container-fluid">
+    <div id="services" class="container-fluid mar-top-100 slideanim">
+      <h1 class="mar-top-50 text-center">What we're good at.</h1>
+      <h5 class="mar-bot-50 text-center">A small preview of what we offer...</h5>
+        <div class="skillbar">
+          <div class="row">
+            <div class="col-4">
+              <h3>Novice</h3>
+            </div>
+            <div class="col-4 text-center">
+              <h3>Intermediate</h3>
+            </div>
+            <div class="col-4 text-right">
+              <h3>Master</h3>
+            </div>
+          </div>
+          <div class="bar-holder">
+            <div class="progress">
+              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+              aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              <h3>Web Design</h3>
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100" style="width:75%">
+            <h3>Mobile App Development</h3>
+          </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%">
+            <h3>Web Design</h3>
+          </div>
+         </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50"
+          aria-valuemin="0" aria-valuemax="100" style="width:80%">
+          <h3>Web Design</h3>
+        </div>
+       </div>
+        </div>
+      </div>
+    </div>
+    <div id="projects" class="container-fluid soft-black-bg slideanim">
 
     </div>
+    <div id="hire-us" class="container-fluid grey-bg">
+      <!-- <h2 class="text-center">CONTACT</h2> -->
+      <div class="row">
+        <div class="col-sm-5">
+          <!-- <p>Contact us and we'll get back to you within 24 hours.</p>
+          <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+          <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+          <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+        </div> -->
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
 </body>
 
 
