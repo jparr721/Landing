@@ -4,6 +4,21 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h1 {
+
+}
+
+h2 {
+    font-size: 5.5em;
+    line-height: 0.87273;
+}
+
+p {
+    display: block;
+    color: #fff;
+    font-size: 1.2em;
+}
+
 .parallax {
     background: 
     linear-gradient(rgba(0, 157, 228, 0.5), rgba(0, 159, 150, 0.5)),
@@ -37,39 +52,15 @@ body {
     background-color: #fff;
 }
 
-#center {
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-}
-
-#description {
-    color: #fff;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
 .sub-text {
-    color: #fff;
-    padding-top: 0.5em;
-    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
-#menuOption1 {
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 0s;
+#menuOption {
+    -webkit-animation-duration: 1.0s;
+    -webkit-animation-delay: 0.5s;
 }
-#menuOption2 {
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 0.75s;
-}
-#menuOption3 {
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 1.5s;
-}
-#menuOption4 {
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-delay: 2.25s;
-}
+
 
 .parallaxText {
     position: absolute; 
@@ -82,10 +73,9 @@ body {
     -webkit-animation-delay: 1s;
 }
 
-.header {
-    padding-top: .5em;
+.nowrap {
+    white-space: nowrap;
     color: #fff;
-    font-size: 5vw;
 }
 
 .sub-heading {
@@ -97,18 +87,6 @@ body {
     color: whitesmoke;
     -webkit-animation-duration: 15s;
     -webkit-animation-delay: 2s;
-}
-
-.col-md-offset-3 {
-    margin-left: 33%;
-}
-
-.col-md-6 {
-    width: 35%;
-}
-
-hr {
-    border-color: #2c3e50;
 }
 
 .description-container {
@@ -143,4 +121,10 @@ hr {
 
 .orange-bg {
     background-color: #f39c12;
+}
+
+.text-container {
+    margin: 0 auto;
+    width: 65%;
+    height: 100%;
 }

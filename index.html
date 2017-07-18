@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <title>Sphynx Software</title>
-        <meta charset="utf-8">
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-toggleable-md fixed-top nav-default">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<head>
+    <title>Sphynx Software</title>
+    <meta charset="utf-8">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-toggleable-md fixed-top nav-default">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="" href="#"></a>
+        <a class="" href="#"></a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto">
-                        <li id='menuOption1' class="animated bounceInRight nav-item">
-                            <a class="link-style" href="#">Home</a>
-                        </li>
-                        <li id='menuOption2' class="nav-item animated bounceInRight">
-                            <a class="link-style" href="#">About</a>
-                        </li>
-                        <li id='menuOption3' class="nav-item animated bounceInRight">
-                            <a class="link-style" href="#">Projects</a>
-                        </li>
-                        <li id='menuOption4' class="nav-item animated bounceInRight">
-                            <a class="link-style" href="#">Hire Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        <div class="parallax">
-            <h1 class="text-center parallaxText animated fadeInDown">Sphynx</h1>
-            <p class="text-center sub-heading animated fadeInUp">Software Engineers With A Passion To Improve</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li id='menuOption' class="animated bounceInRight nav-item">
+                    <a class="link-style" href="#top">Home</a>
+                </li>
+                <li id='menuOption' class="nav-item animated bounceInRight">
+                    <a class="link-style" href="#about">About</a>
+                </li>
+                <li id='menuOption' class="nav-item animated bounceInRight">
+                    <a class="link-style" href="#services">Services</a>
+                </li>
+                <li id='menuOption' class="nav-item animated bounceInRight">
+                    <a class="link-style" href="#projects">Projects</a>
+                </li>
+                <li id='menuOption' class="nav-item animated bounceInRight">
+                    <a class="link-style" href="#hire-us">Hire Us</a>
+                </li>
+            </ul>
         </div>
-        <div class="container-fluid text-center description-container">
-            <h1 class="header">About</h1>
-            <div class="col-xs-10 col-md-6 col-xs-offset-1 col-md-offset-3">
-            <hr>
+    </nav>
+    <div class="parallax">
+        <h1 class="text-center parallaxText animated fadeInDown">Sphynx</h1>
+        <p class="text-center sub-heading animated fadeInUp">Software Engineers With A Passion To Improve</p>
+    </div>
+    <div id="about" class="container-fluid text-center description-container" style="padding-top: 100px; padding-bottom: 100px;">
+        <div class="text-container">
+            <h2 class="nowrap">A Relentless Desire</h1>
+                <h2 class="nowrap">To Improve.</h1>
+                    <p class="sub-text">Sphynx Software is based around quality. It touches all realms of our company. It's in how we interact
+                        with clients, and the products we build for them.. We hold ourselves to a high standard of excellence
+                        and strive to deliver the same level of quality for our client products as we do for our in-house
+                        projects that solve our own issues.
+                    </p>
+        </div>
+    </div>
+    <div id="services" class="container-fluid text-center">
+        <h1>Services</h1>
+        <h5>A small preview of what we offer...</h5>
+        <div class="row">
+            <div class="col-4 purple-bg">
+                <i class="fa fa-hourglass-half fa-5x" aria-hidden="true"></i>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
             </div>
-            <h2 id="description">Quality web based services to suit your needs</h2>
-            <h5 class="sub-text">With years of industry experience under our belts, we have the tools 
-                needed to make products that function quickly, and reliably. </h5>
-        </div>
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-4 purple-bg">
-                    <i class="fa fa-hourglass-half fa-5x" aria-hidden="true"></i>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                </div>
-                <div id='center' class="col-4 blue-bg">
-                    <i class="fa fa-keyboard-o fa-5x" aria-hidden="true"></i>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                </div>
-                <div class="col-4 orange-bg">
-                    <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                    <h1>TEXT TEXT TEXT</h1>
-                </div>
+            <div class="col-4 blue-bg">
+                <i class="fa fa-keyboard-o fa-5x" aria-hidden="true"></i>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
+            </div>
+            <div class="col-4 orange-bg">
+                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
+                <h1>TEXT TEXT TEXT</h1>
             </div>
         </div>
-    </body>
-    
+    </div>
+    <div id="projects" class="container-fluid">
+
+    </div>
+</body>
+
 
 </html>
