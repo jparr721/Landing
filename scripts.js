@@ -34,7 +34,7 @@ $(document).ready(function(){
       var pos = $(this).offset().top;
 
       var winTop = $(window).scrollTop();
-      if (pos < winTop + 625) {
+      if (pos < winTop + 620) {
         $(this).addClass("iconAnimate");
       }
     });
