@@ -1,24 +1,87 @@
-.App {
-  text-align: center;
+/* Universal Styles */
+* {
+  overflow-x: hidden;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+/* Utility Classes */
+.full-page {
+  width: 100%;
+  height: 100vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.parallax {
+  background: linear-gradient(rgba(0, 157, 228, 0.5), rgba(0, 159, 150, 0.5)), url('./assets/imgs/view.JPG');
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
-.App-intro {
-  font-size: large;
+/* Bootstrap Overrides */
+hr {
+  border-top: 1px solid #e2e2e2 !important;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+/* Small devices, anything under 992px */
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #navbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 8px 15px;
+  }
+
+  #navbar > .nav-item {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  #navbar > .nav-item > a, #navbar > .nav-item > a:link, #navbar > .nav-item > a:visited {
+    width: 100%;
+    text-decoration: none;
+    color: #e2e2e2;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  #navbar > .nav-item > a:hover {
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  #navbar > .nav-item > a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 2px #e2e2e2;
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+
+  #navbar > .nav-item > a:hover:after {
+    transform: scaleX(1);
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
 }
