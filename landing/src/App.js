@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { MuiThemeProvider, createMuiTheme } from 'material-ui/styles';
+import createPalette from 'material-ui/styles/palette';
+import blue from 'material-ui/colors/blue';
+import grey from 'material-ui/colors/grey';
+import red from 'material-ui/colors/red';
+import './App.css';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import 'typeface-roboto';
+
+const theme = createMuiTheme({
+  palette: createPalette({
+    primary: blue,
+    accent: grey,
+    error: red,
+  }),
+});
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <MuiThemeProvider theme={theme}>
+          <div className="container-fluid content">
+
+          </div>
+        </MuiThemeProvider>
     );
   }
 }
