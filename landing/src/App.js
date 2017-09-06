@@ -25,10 +25,7 @@ class App extends Component {
   render() {
     return (
         <MuiThemeProvider theme={theme}>
-          <div className="container-fluid content">
-            <Header />
             <Routes />
-          </div>
         </MuiThemeProvider>
     );
   }
