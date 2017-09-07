@@ -10,7 +10,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import 'typeface-roboto';
 
-import Header from '../src/components/header';
+import Navbar from '../src/components/navbar';
 import Routes from '../src/components/routes';
 
 const theme = createMuiTheme({
@@ -25,7 +25,10 @@ class App extends Component {
   render() {
     return (
         <MuiThemeProvider theme={theme}>
+          <div>
+            <Navbar/>
             <Routes />
+          </div>
         </MuiThemeProvider>
     );
   }
